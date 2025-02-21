@@ -64,6 +64,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "docusaurus-plugin-chat-page",
+      {
+        path: "chat", // URL path for the chat page
+        openai: {
+          apiKey: process.env.OPENAI_API_KEY, // Your OpenAI API key
+        },
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
