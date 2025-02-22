@@ -68,6 +68,7 @@ const config: Config = {
     [
       "docusaurus-plugin-chat-page",
       {
+        label: "Chat", // Optional: customize the navbar label
         path: "chat", // URL path for the chat page
         openai: {
           apiKey: process.env.OPENAI_API_KEY, // Your OpenAI API key
@@ -92,7 +93,8 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/chat", label: "Chat", position: "left" },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
